@@ -43,6 +43,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects', {
+    pageTitle: 'Projects'
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: '404 Page not found'
